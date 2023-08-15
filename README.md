@@ -2,6 +2,8 @@
 
 codeVault is a personal blogging website built using React (Vite.js) and Sanity.io. It allows you to create and publish blog posts easily.
 
+check it out: https://code-vault.netlify.app
+
 ## Features
 
 - Create and manage blog posts with a user-friendly interface.
