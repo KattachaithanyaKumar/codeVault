@@ -1,0 +1,491 @@
+.my-masonry-grid {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
+  gap: 60px;
+  margin-left: -30px;
+  /* gutter size offset */
+  width: auto;
+    /* margin-top: 80px; */
+    /* background-color: red; */
+    margin: 80px 10%;
+}
+
+.my-masonry-grid_column {
+  /* padding-left: 30px; */
+  /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column>div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: var(--white);
+  margin-bottom: 30px;
+}
+
+.home-page {
+  width: 70%;
+  margin-top: 20px;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin: 5% 15%;
+}
+
+.blog {
+  background-color: var(--white);
+  border-radius: 30px;
+  overflow: hidden;
+  /* width: 40%; */
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.blog:hover {
+  background-color: var(--hover);
+}
+
+.blog > h4 {
+  width: 100%;
+  text-align: center;
+  /* background-color: red; */
+  padding: 10px 0px;
+  border-bottom: 4px solid var(--black);
+}
+
+.blog > img {
+  width: 90%;
+  margin: 4%;
+  overflow: hidden;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background-color: blue;
+  border-radius: 30px;
+  border: 4px solid var(--black);
+}
+
+.blog > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0px 40px;
+}
+
+.blog > p {
+  text-align: center;
+  /* background-color: red; */
+  margin: 0px 30px 30px 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.rect {
+  background-color: var(--black);
+  height: 10px;
+  width: 100px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.admin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.admin-add {
+  width: 60%;
+  background-color: var(--white);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.admin-add > h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+.admin-add > form {
+  /* background-color: red; */
+  width: 80%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.admin-add > form > label {
+  font-weight: bolder;
+}
+
+.file-uploaded {
+  height: 200px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border: 2px solid var(--black);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: var(--bg);
+}
+
+.admin-add > form > input {
+  padding: 10px;
+  border: 2px solid var(--black);
+  border-radius: 30px;
+  text-indent: 12px;
+}
+
+.admin-add > form > textarea {
+  min-height: 400px;
+  border: 2px solid var(--black);
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.admin-add > form > button {
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  border: 2px solid var(--black);
+  padding: 6px;
+  background-color: var(--bg);
+  border-radius: 30px;
+  font-size: 24px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.admin-add > form > button:hover {
+  background-color: var(--hover);
+}
+
+.center {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-page {
+  margin-top: 4%;
+  /* margin-bottom: 4%; */
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-items: flex-start;
+}
+
+.post-container {
+  width: 50%;
+  background-color: var(--white);
+  margin-bottom: 10%;
+}
+
+.post-container > img {
+  width: 90%;
+  margin: 5%;
+  border: 4px solid var(--black);
+  border-radius: 30px;
+}
+
+.post-container > h1 {
+  text-align: center;
+}
+
+.post-container > p {
+  text-align: center;
+  font-weight: 900;
+}
+
+.blog-content {
+  /* background-color: red; */
+  padding: 30px;
+  line-height: 40px;
+}
+
+.quote {
+  font-style: italic;
+  background-color: rgb(236, 236, 236);
+  padding-left: 20px;
+}
+
+
+figure > img {
+  width: 100%;
+}
+
+.profile-block {
+  width: 20%;
+  /* height: 700px; */
+  background-color: var(--white);
+  display: flex;
+  padding: 20px;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.profile-block > img {
+  width: 70%;
+  border-radius: 50%;
+  margin: 20px;
+  border: 4px solid black;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.scrollbutton > button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 100px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border: 3px solid black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+  .post-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .post-container {
+    width: 90%;
+    margin-bottom: 1%;
+  }
+  .profile-block {
+    margin-top: 10%;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .profile-block > img {
+    width: 30%;
+    margin: 10px;
+  }
+}
+
+
+.about-page {
+  margin-top: 4%;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--black);
+  margin-bottom: 60px;
+  background: radial-gradient(circle, #FECC00 25%, transparent 26%);
+  background-size: 3em 3em;
+  background-color: #FFDD00;
+  opacity: 1
+}
+
+.about-container {
+  width: 60%;
+  display: flex;
+  margin: 6%;
+}
+
+.about-img {
+  padding: 20px;
+  border-radius: 50% 50% 0% 0%;
+  background-color: var(--white);
+  border: 4px solid var(--black);
+  margin-right: 30px;
+}
+
+.about-img > img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50% 50% 0% 0%;
+}
+
+.about-img {
+  position: relative;
+}
+
+.about-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+}
+
+.about-circle > img {
+  width: 100%;
+  animation: rotating 10s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.about-info {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-links {
+  border: 2px solid var(--black);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link > img {
+  width:30%;
+}
+
+.link > h5 {
+  transition: 0.3s ease;
+  margin-top: 10px;
+  padding: 6px;
+  border-radius: 12px;
+  border: 2px solid var(--black);
+}
+
+.link > h5:hover {
+  background-color: var(--white);
+}
+
+.contact-page {
+  min-height: 70vh;
+  /* background-color: red; */
+  /* padding: 2%; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-page > h1 {
+  text-align: center;
+  margin: 10px;
+  margin-top: 4%;
+}
+
+.contact-container {
+  width: 50%;
+  background-color: white;
+}
+
+.contact-container > form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container > form > input {
+  /* width: 50%; */
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid var(--black);
+  border-radius: 30px;
+  text-indent: 10px;
+}
+
+.contact-container > form > textarea {
+  width: 95%;
+  margin: 10px;
+  padding: 10px;
+  height: 100px;
+  border: 2px solid var(--black);
+  border-radius: 20px;
+}
+
+.submit  {
+  background-color: var(--red);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+  .about-container {
+    /* background-color: red; */
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-container {
+    margin: 0;
+    display: grid;
+  }
+  .about-info {
+    padding: 0;
+  }
+  .about-img {
+    margin: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .profile-block {
+    flex-direction: column;
+  }
+  .profile-block > img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .post-container {
+    width: 100%;
+  }
+}
+
+
